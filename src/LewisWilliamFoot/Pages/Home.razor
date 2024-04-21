@@ -1,33 +1,44 @@
 ﻿@page "/"
 
-<MudContainer Class="align-content: center;">
-    <MudCard Class="d-inline-flex pa-4 ma-4">
+<div class="d-flex flex-row">
+    <MudCard Class="pa-4 ma-4 d-flex">
+        <MudCardMedia Image="images/Svec.jpeg" Height="150" />
         <MudCardContent>
-            <MudText>Software Development</MudText>
-            <MudText Typo="Typo.body2">.NET whats new</MudText>
+            <MudText Typo="Typo.h5">Software</MudText>
+            <MudText Typo="Typo.body2">.NET 8 - what's new?</MudText>
         </MudCardContent>
         <MudCardActions>
-            <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+            <MudButton Href="/Software/" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
         </MudCardActions>
     </MudCard>
 
-    <MudCard Class="d-inline-flex pa-4 ma-4">
+    <MudCard Class="pa-4 ma-4 d-flex">
+        <MudCardMedia Image="images/RunningShoes.jpg" Width="150" />
         <MudCardContent>
-            <MudText>Running</MudText>
+            <MudText Typo="Typo.h5">Running</MudText>
             <MudText Typo="Typo.body2">Athens here I come.</MudText>
         </MudCardContent>
         <MudCardActions>
-            <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+            <MudButton Href="/Running/" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
         </MudCardActions>
     </MudCard>
 
-    <MudCard Class="d-inline-flex pa-4 ma-4">
+    <MudCard Class="pa-4 ma-4 d-flex">
+        <MudCardMedia Image="images/GiantsLive.jpg" Width="150" />
         <MudCardContent>
-            <MudText>Music</MudText>
-            <MudText Typo="Typo.body2">Up next Tenacious D</MudText>
+            <MudText Typo="Typo.h5">Music</MudText>
+            <MudText Typo="Typo.body2">Up next: Tenacious D</MudText>
         </MudCardContent>
         <MudCardActions>
-            <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+            <MudButton Href="/Music/" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
         </MudCardActions>
     </MudCard>
-</MudContainer>
+</div>
+
+@code {
+    private bool arrows = true;
+    private bool bullets = true;
+    private bool enableSwipeGesture = true;
+    private bool autocycle = true;
+    private Transition transition = Transition.Slide;
+}
