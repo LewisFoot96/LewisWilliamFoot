@@ -1,33 +1,43 @@
 ﻿@page "/"
 
-<MudContainer Class="align-content: center;">
-    <MudCard Class="d-inline-flex pa-4 ma-4">
-        <MudCardContent>
-            <MudText>Software Development</MudText>
-            <MudText Typo="Typo.body2">.NET whats new</MudText>
-        </MudCardContent>
-        <MudCardActions>
-            <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
-        </MudCardActions>
-    </MudCard>
 
-    <MudCard Class="d-inline-flex pa-4 ma-4">
-        <MudCardContent>
-            <MudText>Running</MudText>
-            <MudText Typo="Typo.body2">Athens here I come.</MudText>
-        </MudCardContent>
-        <MudCardActions>
-            <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
-        </MudCardActions>
-    </MudCard>
+<MudCard Class="pa-4 ma-4 d-inline-flex">
+    <MudImage Src="images/Svec.jpeg"  Height="200"/>
+    <MudCardContent>
+        <MudText Typo="Typo.h5">Software</MudText>
+        <MudText Typo="Typo.body2">.NET 8 - what's new?</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+    </MudCardActions>
+</MudCard>
 
-    <MudCard Class="d-inline-flex pa-4 ma-4">
-        <MudCardContent>
-            <MudText>Music</MudText>
-            <MudText Typo="Typo.body2">Up next Tenacious D</MudText>
-        </MudCardContent>
-        <MudCardActions>
-            <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
-        </MudCardActions>
-    </MudCard>
-</MudContainer>
+<MudCard Class="pa-4 ma-4 d-inline-flex">
+    <MudImage Src="images/RunningShoes.jpg" Height="200" />
+    <MudCardContent>
+        <MudText Typo="Typo.h5">Running</MudText>
+        <MudText Typo="Typo.body2">Athens here I come.</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+    </MudCardActions>
+</MudCard>
+
+<MudCard Class="pa-4 ma-4 d-inline-flex">
+    <MudImage Src="images/GiantsLive.jpg" Height="200" />
+    <MudCardContent>
+        <MudText Typo="Typo.h5">Music</MudText>
+        <MudText Typo="Typo.body2">Up next: Tenacious D</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+    </MudCardActions>
+</MudCard>
+
+@code {
+    private bool arrows = true;
+    private bool bullets = true;
+    private bool enableSwipeGesture = true;
+    private bool autocycle = true;
+    private Transition transition = Transition.Slide;
+}
