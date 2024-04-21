@@ -1,38 +1,39 @@
 ﻿@page "/"
 
+<div class="d-flex flex-row">
+    <MudCard Class="pa-4 ma-4 d-flex">
+        <MudCardMedia Image="images/Svec.jpeg" Height="150" />
+        <MudCardContent>
+            <MudText Typo="Typo.h5">Software</MudText>
+            <MudText Typo="Typo.body2">.NET 8 - what's new?</MudText>
+        </MudCardContent>
+        <MudCardActions>
+            <MudButton Href="/Software/" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+        </MudCardActions>
+    </MudCard>
 
-<MudCard Class="pa-4 ma-4 d-inline-flex">
-    <MudImage Src="images/Svec.jpeg"  Height="200"/>
-    <MudCardContent>
-        <MudText Typo="Typo.h5">Software</MudText>
-        <MudText Typo="Typo.body2">.NET 8 - what's new?</MudText>
-    </MudCardContent>
-    <MudCardActions>
-        <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
-    </MudCardActions>
-</MudCard>
+    <MudCard Class="pa-4 ma-4 d-flex">
+        <MudCardMedia Image="images/RunningShoes.jpg" Width="150" />
+        <MudCardContent>
+            <MudText Typo="Typo.h5">Running</MudText>
+            <MudText Typo="Typo.body2">Athens here I come.</MudText>
+        </MudCardContent>
+        <MudCardActions>
+            <MudButton Href="/Running/" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+        </MudCardActions>
+    </MudCard>
 
-<MudCard Class="pa-4 ma-4 d-inline-flex">
-    <MudImage Src="images/RunningShoes.jpg" Height="200" />
-    <MudCardContent>
-        <MudText Typo="Typo.h5">Running</MudText>
-        <MudText Typo="Typo.body2">Athens here I come.</MudText>
-    </MudCardContent>
-    <MudCardActions>
-        <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
-    </MudCardActions>
-</MudCard>
-
-<MudCard Class="pa-4 ma-4 d-inline-flex">
-    <MudImage Src="images/GiantsLive.jpg" Height="200" />
-    <MudCardContent>
-        <MudText Typo="Typo.h5">Music</MudText>
-        <MudText Typo="Typo.body2">Up next: Tenacious D</MudText>
-    </MudCardContent>
-    <MudCardActions>
-        <MudButton Variant="Variant.Text" Color="Color.Primary">More</MudButton>
-    </MudCardActions>
-</MudCard>
+    <MudCard Class="pa-4 ma-4 d-flex">
+        <MudCardMedia Image="images/GiantsLive.jpg" Width="150" />
+        <MudCardContent>
+            <MudText Typo="Typo.h5">Music</MudText>
+            <MudText Typo="Typo.body2">Up next: Tenacious D</MudText>
+        </MudCardContent>
+        <MudCardActions>
+            <MudButton Href="/Music/" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+        </MudCardActions>
+    </MudCard>
+</div>
 
 @code {
     private bool arrows = true;
