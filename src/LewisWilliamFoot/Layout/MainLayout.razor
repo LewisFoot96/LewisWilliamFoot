@@ -7,14 +7,26 @@
 <MudLayout>
     <MudAppBar>
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        Lewis
+        Lewis William Foot
     </MudAppBar>
     <MudDrawer @bind-Open="@_drawerOpen">
         <MyNavMenu />
     </MudDrawer>
     <MudMainContent>
         @Body
+        <div Class="d-flex justify-space-around flex-wrap mt-3">
+            <MudBadge Class="mx-3 my-2">
+                <MudButton Href="https://github.com/LewisFoot96" Color="Color.Primary" Variant="Variant.Filled">GitHub</MudButton>
+            </MudBadge>
+            <MudBadge Class="mx-3 my-2">
+                <MudButton Href="https://www.linkedin.com/in/lewis-foot-87a9991b7/" Color="Color.Primary" Variant="Variant.Filled">Linkedin</MudButton>
+            </MudBadge>
+            <MudBadge Class="mx-3 my-2">
+                <MudButton Href="https://www.strava.com/athletes/68947961" Color="Color.Primary" Variant="Variant.Filled">Strava</MudButton>
+            </MudBadge>
+        </div>
     </MudMainContent>
+
 </MudLayout>
 @code {
     bool _drawerOpen = true;
