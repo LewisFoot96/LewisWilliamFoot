@@ -1,44 +1,36 @@
 ﻿@page "/"
 
-<div class="d-flex flex-row justify-center">
-    <MudCard Class="pa-4 ma-2 d-flex">
-        <MudCardMedia Image="images/Svec.jpeg" Height="150" />
+<div class="d-flex justify-center">
+    <MudCard Class="pa-2 ma-2">
         <MudCardContent>
             <MudText Typo="Typo.h5">Software</MudText>
             <MudText Typo="Typo.body2">.NET 8 - what's new?</MudText>
+            <MudImage Src="images/Software/TimeAbstractionService.png" Height="200" Width="250" />
         </MudCardContent>
         <MudCardActions>
-            <MudButton Href="/LewisWilliamFoot/Software/" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+            <MudButton Href="Software" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
         </MudCardActions>
     </MudCard>
 
-    <MudCard Class="pa-4 ma-2 d-flex">
-        <MudCardMedia Image="images/RunningShoes.jpg" Width="150" />
+    <MudCard Class="pa-2 ma-2">
         <MudCardContent>
             <MudText Typo="Typo.h5">Running</MudText>
             <MudText Typo="Typo.body2">Athens here I come.</MudText>
+            <MudImage Src="images/Running/RunningShoes.png" Height="200" Width="250" />
         </MudCardContent>
         <MudCardActions>
-            <MudButton Href="/LewisWilliamFoot/Running/" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+            <MudButton Href="Running" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
         </MudCardActions>
     </MudCard>
 
-    <MudCard Class="pa-4 ma-2 d-flex">
-        <MudCardMedia Image="images/GiantsLive.jpg" Width="150" />
+    <MudCard Class="pa-2 ma-2">
         <MudCardContent>
             <MudText Typo="Typo.h5">Music</MudText>
             <MudText Typo="Typo.body2">Up next: Tenacious D</MudText>
+            <MudImage Src="images/Music/GiantsLive.png" Height="200" Width="250" />
         </MudCardContent>
-        <MudCardActions>
-            <MudButton Href="/LewisWilliamFoot/Music/" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
+        <MudCardActions> 
+            <MudButton Href="Music" Variant="Variant.Text" Color="Color.Primary">More</MudButton>
         </MudCardActions>
     </MudCard>
 </div>
-
-@code {
-    private bool arrows = true;
-    private bool bullets = true;
-    private bool enableSwipeGesture = true;
-    private bool autocycle = true;
-    private Transition transition = Transition.Slide;
-}
